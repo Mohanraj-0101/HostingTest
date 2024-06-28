@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="Profile-card">
+        <div class="image">
+            <img src="Profile.jpeg" alt="" class="profile">
+        </div>
+
+        <div class="text-data">
+            <span class="name">Mohanraj R</span>
+            <span class="job">Student & Engineer</span>
+        </div>
+
+        <div class="social-media">
+            <a href="#" style="background-color:#4267b2" class="media">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="#" style="background-color:#1da1f2" class="media">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="#" style="background-color:#e1306c" class="media">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="#" style="background-color:#ff0000" class="media">
+                <i class='bx bxl-youtube'></i>
+            </a>
+        </div>
+
+        <div class="buttons">
+            <button class="button">Subscribe</button>
+            <button class="button">Message</button>
+        </div>
+
+        <div class="analytics">
+            <div class="data">
+                <i class='bx bx-heart'></i>
+                <span>60k</span>
+            </div>
+            <div class="data">
+                <i class='bx bx-message-rounded'></i>
+                <span>60k</span>
+            </div>
+            <div class="data">
+                <i class='bx bx-share'></i>
+                <span>60k</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+        * {
+            margin: 0px;
+            padding: 0%;
+            font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .Profile-card {
+            max-width: 360px;
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            position: relative;
+        }
+
+        .Profile-card::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            border-radius: 20px 20px 0px 0px;
+            background-color: #4070f4;
+            height:36%;
+            width: 100%;
+        }
+
+        .image {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: #4070f4;
+            padding: 3px;
+            margin-bottom: 10px;
+        }
+
+        .image .profile {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            background-color: #fff;
+            padding: 3px;
+        }
+
+        .Profile-card .text-data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .text-data .name {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .text-data .job {
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        .Profile-card .social-media {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .social-media .media {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 30px;
+            margin: 0 10px;
+            background-color: #4070f4;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 50%;
+        }
+
+        .media:hover {
+            cursor: pointer;
+        }
+
+        .Profile-card .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .buttons .button {
+            margin: 0 10px;
+            padding: 8px 25px;
+            border-radius: 30px;
+            border: none;
+            color: #fff;
+            background-color: #4070f4;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            cursor: pointer;
+            background-color: #0e4bf1;
+        }
+
+        .Profile-card .analytics{
+            display: flex;
+            margin-top: 20px;
+        }
+
+        i{
+            font-size: 15px;
+        }
+
+        .analytics .data{
+            padding: 0 10px;
+            border-right: 3px solid #f4f4f4;
+        }
+
+        .data:last-child{
+            border: none;
+        }
+
+    </style>
+</body>
+
+</html>
